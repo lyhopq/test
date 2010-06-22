@@ -1,0 +1,474 @@
+*{
+  font-size:13px;
+  /*color:white;*/
+    color:#9D9975;
+  /*font-family:"微软雅黑";*/
+}
+
+CallWidget QLineEdit#telEdt
+{
+  font-size:24px;
+}
+
+QDialog{
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #1B2534, stop: 0.4 #010101,
+                                 stop: 0.5 #000101, stop: 1.0 #1F2B3C);
+}
+
+QWidget{
+    background:#121922;
+}
+
+/* Customize tooltips. */
+QToolTip {
+    background-color: rgb(200,200,255);
+    border-color: darkslategray;
+    border-width: 1px;
+    border-style: solid;
+    padding: 3px;
+    font: bold;
+    border-radius: 3px;
+    opacity: 200;
+}
+
+/*
+QLabel{
+     border: 2px solid green;
+     border-radius: 8px;
+     padding: 2px;
+     background:transparent;
+}
+*/
+
+QPushButton,QToolButton{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                stop: 0 #5B5F5F, stop: 0.5 #0C2436,
+                                stop: 1.0 #27405A);
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: #11223F;
+    padding: 1px;
+}
+
+QPushButton::hover,QToolButton::hover{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #758385, stop: 0.5 #122C39,
+                                 stop: 1.0 #0E7788);
+    border-color: #11505C;
+}
+
+QPushButton::pressed,QToolButton::pressed{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #969B9C, stop: 0.5 #16354B,
+                                 stop: 1.0 #244F76);
+    border-color: #11505C;
+}
+
+QPushButton::checked,QToolButton::checked{
+    color: red;
+}
+
+QPushButton::disabled,QToolButton::disabled{
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #282B2C, stop: 0.5 #09121A,
+                                 stop: 1.0 #111D29);
+    border-color: #0A1320;
+    color:#6A6864;
+
+}
+
+QDialog QPushButton,QDialog QToolButton{
+  min-width:30px;
+  min-height:23px;
+}
+
+QToolButton[objectName="minimizeToolBtn"] {
+    background: transparent;
+    border:none;
+    image:url(qss/minimize.png)
+}
+
+QFrame{
+    /*background: red;*/
+    /*border-color:#32435E;*/
+    border-color: red;
+    border-width:2px;
+    border-radius: 3px;
+}
+
+QLineEdit,QTextEdit {
+    border: 1px solid #32435E;
+    border-radius: 3px;
+    background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #080B10,
+                                 stop: 1.0 #212C3F);
+    selection-background-color: #0A246A;
+}
+
+QLineEdit::hover{
+  /*border-color:#5D8B9E;*/
+  border-color: white;
+}
+
+QLineEdit[echoMode="3"] {
+     lineedit-password-character: 9679;
+}
+
+QLineEdit:read-only {
+     background: #543F7C;
+}
+
+QCheckBox {
+     spacing: 5px;
+}
+
+QGroupBox {
+     border: 2px solid #2E3D57;
+     border-radius: 3px;
+     margin-top: 2ex; /* leave space at the top for the title */
+}
+
+QGroupBox::title {
+     subcontrol-origin: margin;
+     subcontrol-position: top left;
+     padding: 0 3px;
+     background-color: transparent;
+}
+
+
+/*
+QGroupBox::indicator {
+     width: 13px;
+     height: 13px;
+}
+*/
+
+QToolTip {
+     border: 1.5px solid #179BAB;
+     padding: 3px;
+     border-radius: 8px;
+     opacity: 200; /*透明度*/
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #0C1016,
+                                 stop: 1.0 #233043);
+}
+
+QStatusBar {
+     background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #07090E,
+                                 stop: 1.0 #202C3D);
+}
+
+QStatusBar::item {
+     border: 1px solid #3E58A5;
+     border-radius: 3px;
+}
+
+#QStatusBar QLabel {
+     border: 1px solid #6AF0FF;
+     /*background: white; */
+}
+
+QPushButton#pb_qx1,QPushButton#pb_qc1,
+QPushButton#pb_qx2,QPushButton#pb_qc2,
+QPushButton#pb_qx3,QPushButton#pb_qc3,
+QPushButton#pb_qx4,QPushButton#pb_qc4,
+QPushButton#pb_qx5,QPushButton#pb_qc5,
+QPushButton#pb_qx6,QPushButton#pb_qc6,
+QPushButton#pb_qx7,QPushButton#pb_qc7,
+QPushButton#pb_qx8,QPushButton#pb_qc8,
+QPushButton#pb_qx9,QPushButton#pb_qc9,
+QPushButton#pb_qx10,QPushButton#pb_qc10,
+QPushButton#pbBB,QPushButton#pbSYB,QPushButton#pbZSYB
+{
+    max-width: 60;
+    min-width: 60;
+}
+
+QPushButton#pb_ok,QPushButton#pb_cancel {
+    min-width: 50;
+}
+
+digitDialog QPushButton {
+    width: 40;
+    height: 40;
+}
+
+QPushButton#pb_sm{
+    width: 90;
+    height: 70;
+}
+
+#g11 QLabel,#g21 QLabel,#g31 QLabel,#g41 QLabel
+{
+    background: green;
+}
+
+#g12 QLabel,#g22 QLabel,#g32 QLabel,#g42 QLabel
+{
+    color: black;
+    background: #FFFFE7;
+}
+
+#g13 QLabel,#g23 QLabel,#g33 QLabel,#g43 QLabel
+{
+    /*color: black;*/
+    /*background: white;*/
+    border-style: outset;
+    border-width: 2px;
+    border-color: beige;
+    border-radius: 10px;
+    padding: 6px
+}
+
+QGroupBox#g11,QGroupBox#g21,QGroupBox#g31,QGroupBox#g41,
+QGroupBox#g13,QGroupBox#g23,QGroupBox#g33,QGroupBox#g43
+{
+    border:0px;
+    margin-top: 0;
+}
+
+QGroupBox#g12,QGroupBox#g22,QGroupBox#g32,QGroupBox#g42
+{
+    border: 0px;
+}
+
+TimeLabel
+{
+    max-height: 35;
+}
+
+MyTableView
+{
+    background: #A0E0F1;
+}
+
+.QTableView,.MyTableView1
+{
+    background: #7764BE;
+    selection-background-color: green;
+}
+
+/*#frameCSD .QFrame*/
+.QFrame,.MyPb,.MyKnob
+{
+    border: 2px solid #008000;
+    border-radius: 4px;
+    padding: 2px;
+    /*background-image: url(sources/welcome.png);*/
+}
+
+
+/*
+#frameSSZL
+{
+      background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                 stop: 0 #0082FF, stop: 1.0 #B4DCF0);
+}
+
+MyPlot
+{
+    color: #E6Ac77;
+}
+*/
+
+QwtSlider::thumb
+{
+    background: green;
+}
+
+#frameZLJS QPushButton
+{
+    min-width: 30;
+    min-height: 30;
+}
+
+QLabel#t1
+{
+    background: red;
+    border: 0px;
+    max-width: 10;
+    max-height: 10;
+}
+QLabel#t2
+{
+    background: green;
+    border: 0px;
+    max-width: 10;
+    max-height: 10;
+}
+
+
+/*
+QwtSlider::groove:horizontal {
+     border: 1px solid #999999;
+     height: 8px;
+     background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+     margin: 2px 0;
+}
+
+QwtSlider::handle:horizontal {
+     background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #b4b4b4, stop:1 #8f8f8f);
+     border: 1px solid #5c5c5c;
+     width: 18px;
+     margin: -2px 0;
+     border-radius: 3px;
+}
+*/
+
+#frameYXZT QFrame,QFrame#frameYHGL
+{
+    border: 0px;
+}
+
+QFrame#framek1,QFrame#framek2
+{
+    border: 5px solid #E6AC77;
+    background: black;
+}
+
+QFrame#frameBG
+{
+    border: 2px solid #F0FFF0;
+    background: black;
+    background-image: url(:/sources/brushedmetal.png);
+}
+
+
+QLabel#labelXZQ,QLabel#labelSL,QLabel#labelZ,QLabel#labelJZ
+{
+     border: 2px solid white;
+     border-radius: 8px;
+     padding: 2px;
+     background:black;
+     color: red;
+     min-width: 48px;
+}
+QLabel#labelDDJ
+{
+     min-width: 48px;
+}
+
+
+/* Customize radio buttons. */
+
+QRadioButton {
+    spacing: 5px;
+}
+
+QRadioButton::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QRadioButton::indicator::unchecked {
+    image: url(:/sources/radiobutton_unchecked.png);
+}
+
+QRadioButton::indicator:unchecked:hover {
+    image: url(:/sources/radiobutton_unchecked_hover.png);
+}
+
+QRadioButton::indicator:unchecked:pressed {
+    image: url(:/sources/radiobutton_unchecked_pressed.png);
+}
+
+QRadioButton::indicator::checked {
+    image: url(:/sources/radiobutton_checked.png);
+}
+
+QRadioButton::indicator:checked:hover {
+    image: url(:/sources/radiobutton_checked_hover.png);
+}
+
+QRadioButton::indicator:checked:pressed {
+    image: url(:/sources/radiobutton_checked_pressed.png);
+}
+
+/* Customize check boxes. */
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    width: 13px;
+    height: 13px;
+}
+
+QCheckBox::indicator:unchecked {
+    image: url(:/sources/checkbox_unchecked.png);
+}
+
+QCheckBox::indicator:unchecked:hover {
+    image: url(:/sources/checkbox_unchecked_hover.png);
+}
+
+QCheckBox::indicator:unchecked:pressed {
+    image: url(:/sources/checkbox_unchecked_pressed.png);
+}
+
+QCheckBox::indicator:checked {
+    image: url(:/sources/button_ok1.png);
+}
+
+QCheckBox::indicator:checked:hover {
+    image: url(:/sources/checkbox_checked_hover.png);
+}
+
+QCheckBox::indicator:checked:pressed {
+    image: url(:/sources/checkbox_checked_pressed.png);
+}
+
+QLabel#label2,QLabel#label4,QLabel#label6,QLabel#label_dqz,
+QLineEdit#le1,QLineEdit#le2,QLineEdit#le3,QLineEdit#le4
+{
+    color: green;
+}
+
+QFrame#frameKZW
+{
+    font-size: 12px;
+    border: 0px;
+}
+
+QFrame#frame_sd,QFrame#frame_zl
+{
+    background: #92669C;
+    border: 0px;
+    border-radius: 0px;
+
+    qproperty-frameShape: Panel;
+    qproperty-frameShadow: Raised;
+    qproperty-lineWidth: 2;
+}
+
+QLabel#label_sd,QLabel#label_zl
+{
+     background:transparent;
+}
+
+QLCDNumber#lcdNumber_sd,QLCDNumber#lcdNumber_zl
+{
+    color: red;
+    border: 2px solid white;
+    border-radius: 15px;
+    qproperty-frameShape: Panel;
+    qproperty-frameShadow: Sunken;
+    qproperty-lineWidth: 2;
+}
+
+QLabel#label_1b,QLabel#label_2b,QLabel#label_3b,QLabel#label_4b
+{
+    color: blue;
+}
+QLabel#b1Label,QLabel#b2Label,QLabel#b3Label,QLabel#b4Label
+{
+    color: green;
+}
+
+QGroupBox
+{
+    color: #A84808;
+}
